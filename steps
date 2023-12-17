@@ -1,0 +1,37 @@
+steps:
+
+1. Create an E2-Medium Instance:
+gcloud compute instances create INSTANCE_NAME \
+--machine-type=e2-medium \
+--image-family=debian-11 \
+--image-project=debian-cloud \
+--boot-disk-size=10GB \
+--zone=asia-south2-a \
+--tags=http-server \
+
+2. sudo apt-get update
+
+3. Install Docker:
+   curl -fsSL https://get.docker.com -o get-docker.sh
+   sudo sh ./get-docker.sh --dry-run
+
+4. If your project is in github use git clone and if your project file is in your local system click on file upload.Make sure to make a zip file of your project
+
+5. sudo apt-get install unzip. (It's a tool to extract the zip files.Syntax: unzip filename.zip)
+
+6. Go to the project directory.Make a Dockerfile (use capital D):
+   nano Dockerfile
+
+   FROM httpd:2.4
+   COPY . /usr/local/apache2/htdocs
+
+7. sudo docker build -t examhub .
+
+8. sudo docker images (Check if the image is build or not)
+
+9. sudo docker run -itd -p 80:80 --name examhub examhub
+
+10. Copy the machine IP and paste it on your browser
+
+
+
