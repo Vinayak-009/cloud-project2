@@ -20,3 +20,6 @@ Dockerise my Website and integrate it with cloud Storage
 ![Screenshot 2023-12-07 023135](https://github.com/Vinayak-009/cloud-project2/assets/83303847/c56c2674-d776-43cf-bdd0-b00243f94626)
 
 
+
+![Screenshot 2023-12-07 023152](https://github.com/Vinayak-009/cloud-project2/assets/83303847/3f7d8d17-6a26-4bcd-b998-01c9ebdcb933)
+
